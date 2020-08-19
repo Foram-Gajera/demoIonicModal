@@ -1,0 +1,54 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Modal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content> -->
+
+<!-- <ion-content padding class="main-view">
+    <div class="overlay" (click)="dismiss()"></div>
+    <div class="modal_content">
+        <div class="circle"></div>
+        <div class="modal-content">
+            <h2>Welcome to Ionic!</h2>
+            <p>
+                This starter project comes with simple tabs-based layout for apps that are going to primarily use a Tabbed UI.
+            </p>
+            <p>
+                Take a look at the <code>pages/</code> directory to add or change tabs, update any existing page or create new pages.
+            </p>
+        </div>
+    </div>
+</ion-content> -->
+
+<div class="inner-content modal_content modal-content">
+    <div class="circle">
+    </div>
+    <ion-header>
+        <ion-toolbar color="success">
+            <ion-title>Modal</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-grid>
+        <ion-row *ngFor="let i of content.cities">
+            <ion-col text-center>
+                {{i}}
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col text-center>
+                <ion-button (click)="closeModal()">Close Modal</ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</div>
+
+
+
+<!-- <ion-content class="ion-padding customClass model_content">
+   
+
+</ion-content> -->
